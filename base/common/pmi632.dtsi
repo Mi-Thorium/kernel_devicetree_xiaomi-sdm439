@@ -81,7 +81,7 @@
 
 &thermal_zones {
 	quiet-therm-step {
-		thermal-sensors = <&pmi632_adc_tm 0x13>;
+		thermal-sensors = <&pmi632_tz>;
 		/delete-property/ wake-capable-sensor;
 
 		trips {
@@ -117,7 +117,7 @@
 	};
 
 	quiet-therm-adc {
-		thermal-sensors = <&pmi632_adc_tm 0x13>;
+		thermal-sensors = <&pmi632_tz>;
 		/delete-property/ wake-capable-sensor;
 	};
 };
