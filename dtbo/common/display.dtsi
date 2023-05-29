@@ -28,3 +28,8 @@
 		pins = "gpio60","gpio132","gpio133";
 	};
 };
+
+/* Custom */
+&mdss_dsi1_pll {
+	status = "disabled";
+};
