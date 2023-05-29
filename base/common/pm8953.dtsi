@@ -93,3 +93,11 @@
 		};
 	};
 };
+
+/* Custom */
+&pm8953_l5 {
+	regulator-always-on;
+};
+&pm8953_l16 {
+	regulator-always-on;
+};
