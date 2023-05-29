@@ -47,6 +47,16 @@
 	};
 };
 
+&pm8953_adc_tm_iio {
+	backlight_therm {
+		reg = <VADC_P_MUX4_1_1>;
+		label = "backlight_therm";
+		qcom,ratiometric;
+		qcom,hw-settle-time = <200>;
+		qcom,pre-scaling = <1 1>;
+	};
+};
+
 &pm8953_adc_tm {
 	/delete-node/ pa_therm0;
 	backlight_therm {
